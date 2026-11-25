@@ -1,0 +1,7 @@
+/site/
+/site-build.*/
+/.venv/
+__pycache__/
+/assets/Audiowide.woff2
+/assets/Audiowide-OFL.txt
+.DS_Store

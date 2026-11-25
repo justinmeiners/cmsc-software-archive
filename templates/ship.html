@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block main %}
+<h1>{{ title }}</h1>
+{{ about | safe }}
+<nav aria-label="Screenshots">
+  <h2>Screenshots</h2>
+  {% include "tiles.html" %}
+</nav>
+{{ references | safe }}
+{% endblock %}

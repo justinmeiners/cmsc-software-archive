@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <link rel="stylesheet" href="{{ root }}assets/style.css">
+</head>
+<body>
+<header>
+  <nav aria-label="Breadcrumb"><a href="{{ root }}index.html">{{ archive_title }}</a>{% for label, url in breadcrumbs %} / {% if url %}<a href="{{ url }}">{{ label }}</a>{% else %}<span aria-current="page">{{ label }}</span>{% endif %}{% endfor %}</nav>
+  <nav aria-label="Project"><a href="https://github.com/justinmeiners/cmsc-software-archive" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+</header>
+<main>
+{% block main %}{% endblock %}
+</main>
+<footer>
+  <p><small>This site is for educational and historical purposes only.</small></p>
+</footer>
+</body>
+</html>

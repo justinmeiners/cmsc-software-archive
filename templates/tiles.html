@@ -1,0 +1,5 @@
+  <ul class="tiles">
+  {% for tile in tiles %}
+    <li><a href="{{ tile.slug }}/index.html">{% if tile.has_image %}<img src="{{ tile.slug }}/tile.png" alt="" loading="lazy">{% endif %}{{ tile.title }}</a></li>
+  {% endfor %}
+  </ul>

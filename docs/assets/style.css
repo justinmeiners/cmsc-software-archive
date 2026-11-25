@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Audiowide;
+  src: url("Audiowide.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  color-scheme: dark;
+  background: #000;
+  color: #eee;
+}
+
+body {
+  max-width: 56rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: Audiowide, system-ui, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+footer small {
+  color: #a0a0a0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.tiles li {
+  width: 12rem;
+  max-width: 100%;
+}
+
+.tiles a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.tiles img {
+  width: 12rem;
+  height: 9rem;
+  object-fit: contain;
+  object-position: left center;
+}

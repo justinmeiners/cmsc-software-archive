@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block main %}
+<h1>{{ archive_title }}</h1>
+{{ about | safe }}
+<h2>Controls</h2>
+<nav>
+  {% include "tiles.html" %}
+</nav>
+{% endblock %}
