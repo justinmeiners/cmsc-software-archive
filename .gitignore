@@ -1,6 +1,7 @@
 /site/
 /site-build.*/
 /.venv/
+/notes.md
 __pycache__/
 /assets/Audiowide.woff2
 /assets/Audiowide-OFL.txt

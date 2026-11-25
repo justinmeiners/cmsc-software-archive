@@ -14,10 +14,9 @@
 <main>
 <h1>HyperCard</h1>
 <section id="technology">
-  <h2>How the controls were written</h2>
-  <p>The controls were built in Apple’s HyperCard for the classic Macintosh. Each station is a <em>stack</em>: a collection of screens called <em>cards</em>. Cards contain buttons and fields and can share a background, which lets a station reuse its navigation and status displays across screens.</p>
-  <p>The station logic is written in HyperTalk, HyperCard’s English-like scripting language. Scripts attached to buttons, cards, and stacks respond to events such as a mouse click or a card opening. The scripts can also call native extensions (<code>XCMD</code>s). For example, <code>AddColor</code> paints color over the base card graphics. These extensions, along with pictures and sounds, are stored in the original files’ Macintosh resource forks.</p>
-  <p>The stations were designed to run on separate Macs. HyperCard Program Linking let a script send messages to HyperCard on another station over AppleTalk or request a value from it. For example, Galileo Operations notifies Core when a long-range message is ready; Core requests the text and sends an acknowledgement.</p>
+  <p>Many different control sets in the 90s, were built in Apple’s <a href="https://en.wikipedia.org/wiki/HyperCard">HyperCard</a> for the classic Macintosh. Each station is a <em>stack</em>: a collection of screens called <em>cards</em>. Cards contain buttons and fields and can share a background, which lets a station reuse its navigation and status displays across screens.</p>
+  <p>The station logic is written in HyperTalk, Scripts attached to buttons, cards, and stacks respond to events such as a mouse click or a card opening. The scripts can also call native extensions (<code>XCMD</code>s). For example, <code>AddColor</code> paints color over the base card graphics. These extensions, along with pictures and sounds, are stored in the original files’ Macintosh resource forks.</p>
+  <p>The stations were designed to run on separate Macs. HyperCard Program Linking let a script send messages to HyperCard on another station over AppleTalk or request a value from it.</p>
 </section>
 
 <section id="emulation">
@@ -33,10 +32,8 @@
   <dt>HyperCard</dt>
   <dd>HyperCard 2.4.1 with an 8 MiB preferred memory allocation so its AddColor extension can draw the color overlays.</dd>
   <dt>Graphics and fonts</dt>
-  <dd>QuickTime 3.0 for media. The eWorld 1.1 font suitcase supplies eWorld Tight and Espy Sans fonts.</dd>
+  <dd>QuickTime 3.0 for media. The eWorld 1.1 font suitcase supplies eWorld Tight and Espy Sans fonts. The Commador font could not be found and was generated from a TrueType file.</dd>
 </dl>
-<p>The USS Galileo, USS Maximus, and both USN Galileo screenshot sets use the original Commador typeface, installed as a classic Mac font suitcase made from the TrueType file. It restores the intended lettering on the Alert and Station Offline cards without editing the original stacks.</p>
-<p>Both USN Galileo Navigation stacks reference an external image named <code>reactor_diagram</code>. It was not included with the archived files, so the Engine Control screenshots still show a placeholder.</p>
 </section>
 
 </main>
