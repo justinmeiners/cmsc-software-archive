@@ -64,3 +64,19 @@ img {
   object-fit: contain;
   object-position: left center;
 }
+
+.programmers {
+  border-collapse: collapse;
+}
+
+.programmers th,
+.programmers td {
+  padding: 0.35rem 0.7rem 0.35rem 0;
+  border-bottom: 1px solid #444;
+  text-align: left;
+  vertical-align: top;
+}
+
+.programmers th[scope="row"] {
+  font-weight: normal;
+}
