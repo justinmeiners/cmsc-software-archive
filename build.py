@@ -1,6 +1,7 @@
 import re
 import shutil
 import subprocess
+from datetime import date
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -93,6 +94,7 @@ def generate(stage):
         keep_trailing_newline=True,
     )
     env.globals["archive_title"] = ARCHIVE_TITLE
+    env.globals["updated_date"] = date.today().isoformat()
     thumb = thumbnail_command()
     copy_assets(stage)
 
